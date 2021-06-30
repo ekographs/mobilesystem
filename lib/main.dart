@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,8 +8,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,9 +16,25 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Splashscreen extends StatelessWidget {
-  const Splashscreen({Key? key}) : super(key: key);
+class Splashscreen extends StatefulWidget {
+  @override
+  _SplashscreenState createState() => _SplashscreenState();
+}
 
+class _SplashscreenState extends State<Splashscreen> {
+  @override
+  void initState() {
+    Timer(
+      Duration(
+        seconds: 4,
+      ),(){
+       Navigator.pushReplacement(context, MaterialPageRoute
+         (builder: (context)=>Registerscreen();
+       ));
+    }
+    );
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'dart:js';
 
 import 'package:flutter/material.dart';
+import 'package:mobilesystem/screens/register_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,7 +29,7 @@ class _SplashscreenState extends State<Splashscreen> {
         seconds: 4,
       ),(){
        Navigator.pushReplacement(context, MaterialPageRoute
-         (builder: (context)=>Registerscreen();
+         (builder: (context)=>RegisterScreen(),
        ));
     }
     );

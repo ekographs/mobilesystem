@@ -7,7 +7,7 @@ class RegisterScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Image.asset('images/neko.png'),
+            Image.asset('images/nekologo.png'),
             TextField(),
             TextField(),
             TextField(),

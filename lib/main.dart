@@ -39,7 +39,9 @@ class _SplashscreenState extends State<Splashscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('images/nekologo.png'),
+        child: Hero(
+          tag: 'logo',
+            child: Image.asset('images/nekologo.png')),
       ),
     );
   }

@@ -5,15 +5,20 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       body: Center(
-        child: Column(
-          children: [
-            Image.asset('images/nekologo.png'),
-            TextField(),
-            TextField(),
-            TextField(),
-            TextField(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              Hero(
+                  tag: 'logo',
+                  child: Image.asset('images/nekologo.png')),
+              TextField(),
+              TextField(),
+              TextField(),
+              TextField(),
+            ],
 
+          ),
         ),
       ),
     );

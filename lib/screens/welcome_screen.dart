@@ -1,24 +1,33 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobilesystem/screens/onboard_screen.dart';
+
+import 'constants.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: OnBoardScreen()),
-          Text('Excited to order from your nearest store?'),
-          SizedBox(height: 20,),
-          TextButton(
-            style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            Expanded(child: OnBoardScreen()),
+            Text('Excited to order from your nearest store?', style: TextStyle(fontSize: 18,) ),
+            SizedBox(height: 30,),
+            TextButton(
+            style: TextButton.styleFrom(
+            backgroundColor: Colors.blueAccent,
+            alignment: Alignment.center,
+            primary: Colors.white,
+            textStyle: const TextStyle(fontSize: 30),
             ),
             onPressed: () {},
-            child: Text('Set Your Delivery Location'),
-
-          ),
-        ],
+              child: const Text('Set Delivery Location'),
+        ),
+            SizedBox(height: 30,),
+          ],
+        ),
       ),
     );
   }

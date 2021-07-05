@@ -26,6 +26,15 @@ class WelcomeScreen extends StatelessWidget {
               child: const Text('Set Delivery Location'),
         ),
             SizedBox(height: 30,),
+            RichText(text: TextSpan(
+            text: 'Returning Customer?', style: TextStyle(fontSize: 18,color: Colors.black),
+              children: [
+              TextSpan(
+                text: 'Login here',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+              ),
+            ],
+            ),
+            ),
           ],
         ),
       ),

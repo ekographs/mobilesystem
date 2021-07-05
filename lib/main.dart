@@ -40,9 +40,13 @@ class _SplashscreenState extends State<Splashscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Hero(
-          tag: 'logo',
-            child: Image.asset('images/nekologo.png')),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset('images/nekologo.png'),
+            Text('Mobile delivery services only',style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+          ],
+        ),
       ),
     );
   }

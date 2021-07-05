@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:mobilesystem/screens/onboard_screen.dart';
+import 'package:mobilesystem/screens/welcome_screen.dart';
 
 
 void main() {
@@ -30,7 +31,7 @@ class _SplashscreenState extends State<Splashscreen> {
         seconds: 4,
       ),(){
        Navigator.pushReplacement(context, MaterialPageRoute
-         (builder: (context)=>OnBoardScreen(),
+         (builder: (context)=>WelcomeScreen(),
        ));
     }
     );

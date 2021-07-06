@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "421228261149",
+    "project_id": "mobilesystemneko",
+    "storage_bucket": "mobilesystemneko.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421228261149:android:d91a18970d7dc946233bf4",
+        "android_client_info": {
+          "package_name": "com.example.mobilesystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421228261149-votn53clq7lqeq04emm9tv24m69ui3id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilesystem",
+            "certificate_hash": "a7ce72c65c5c7b51ac2866b038bcda6c769fafc3"
+          }
+        },
+        {
+          "client_id": "421228261149-m265bfblsdjb1lhqktr7e9l9g46e3qv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_PE4VvMyitHZ1-B9XmS2N9Vhf9b3EDns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421228261149-m265bfblsdjb1lhqktr7e9l9g46e3qv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
